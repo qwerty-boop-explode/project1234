@@ -1,0 +1,104 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'StratosSkyeng', sans-serif;
+}
+
+body {
+    background: linear-gradient(120deg, #8673a1, #606e8c);
+    color: #ffffff;
+}
+
+.content {
+    min-height: 100vh;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.center {
+    padding-left: calc(50% - 500px);
+    padding-right: calc(50% - 500px);
+}
+
+h1, h2 {
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 16px;
+    line-height: 1.6;
+}
+
+ul, ol {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* Навигация страниц */
+/* Верхняя навигация */
+.page-nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;                 /* расстояние между кнопками */
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.page-nav a {
+    background-color: #7c4dff;
+    color: white;
+    text-decoration: none;
+    padding: 12px 26px;
+    border-radius: 999px;
+    font-weight: 600;
+    transition: 0.3s;
+    white-space: nowrap;
+}
+
+.page-nav a:hover {
+    background-color: #9a7dff;
+}
+
+
+/* Когда кнопка одна — прижимаем к нужной стороне */
+.page-nav.only-next {
+    justify-content: flex-start;
+}
+
+.page-nav.only-prev {
+    justify-content: flex-end;
+}
+
+/* Мемы: 2 ряда */
+.memes-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.memes-grid img {
+    width: 100%;
+    border-radius: 16px;
+}
+
+
+/* Картинки */
+img {
+    max-width: 100%;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+/* Мемы в ряд */
+.memes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
